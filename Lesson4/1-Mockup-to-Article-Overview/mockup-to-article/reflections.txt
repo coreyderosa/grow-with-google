@@ -1,0 +1,15 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+* What new skills have you learned?
+    -I learned how to validate my html using https://validator.w3.org!!  What a great tool and a great way to make sure my html is clean.
+* What has been easy?
+    - I feel that the course navigation has been easy and well organized.  I have been able to easily find my way around.  I also feel it's easy to submit forum answers and questions.  I have been challenged in every step up to this point and have found the resources Udacity has provided have been reliable.
+* What has been difficult?
+    - Nothing has been too difficult, however, it has been difficult to keep up with some of the Slack channels.  I found that if I scroll and find someone who needs help I concentrate on helping that one person until their issue has been resolved then I move onto the next.
+* How have you used the problem solving strategies from the first project to overcome challenges so far?
+    - I have used the MDN element reference several times as well as the markup validator.  Both of these tools have helped me clean up my code and use the correct and most up-to-date syntax.
