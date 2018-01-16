@@ -1,0 +1,45 @@
+/* add your CSS here */
+
+body {
+  width: 350px;
+  border-radius: 3px;
+}
+
+.layout {
+  padding: 0px 20px 20px 20px;
+  margin: 5px;
+  width: 320px;
+}
+
+.header {
+  padding: 00px;
+}
+
+.list-item {
+  list-style: none;
+}
+
+img {
+  width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  /* padding: 5px; */
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D3D3D3;
+  border-radius: 3px;
+}
+
+.card-shadow {
+  box-shadow: 10px 10px 30px grey;
+}
+
+.info-section {
+  padding: 0px 15px 0px 15px;
+  width: 300px;
+  box-sizing: border-box;
+}
