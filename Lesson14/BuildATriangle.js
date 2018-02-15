@@ -13,7 +13,7 @@ function makeLine(length) {
 function buildTriangle(num) {
   var tri = "";
   for (var i = 1; i <= num; i++) {
-    tri = tri + makeLine(i);
+    tri += makeLine(i);
   }
   return tri;
 }
