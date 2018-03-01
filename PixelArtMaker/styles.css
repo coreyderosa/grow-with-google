@@ -9,12 +9,36 @@
 
 
 /* Content */
-.gallery {
-    …
+body {
+  font-family: "Orbitron";
+
+
+}
+.height{
+/*  */
 }
 
-.gallery-img {
-    …
+.height-text-input{
+  border: solid;
+}
+
+.width-text-input{
+  border: solid;
+}
+
+.hex-value-title{
+  border: solid;
+}
+
+.color-well-hex-value{
+  border: solid;
+}
+
+.color-well{
+  width: 200px;
+  height: 60px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),
+  0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 
