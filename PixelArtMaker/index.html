@@ -4,39 +4,48 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron"
+        rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
         <title>Pixel Art Maker</title>
     </head>
     <body>
       <h1>Pixel Art Maker</h1>
       <section class="the-input">
-        <h2>Enter you GRID specifications</h2>
-        <div class="height">
-          <input class="height-text-input" type="text" name="height"
-          id="height-text-input-id" placeholder="height" maxlength="3" size="4">
+        <h2>Enter GRID specifications</h2>
 
-          <input class="height-submit" type="submit" value="height">
+        <div class="grid-rows">
+          <input class="rows-input" type="number" name="rows"
+          id="rows-id" placeholder="rows">
         </div>
 
-        <div class="width">
-          <input class="width-text-input" type="text" name="width"
-          id="width-text-input-id" placeholder="width" maxlength="3" size="4">
-
-          <input class="width-submit" type="submit" value="width">
+        <div class="grid-cols">
+          <input class="cols-input" type="number" name="cols"
+          id="cols-id" placeholder="columns">
         </div>
+
+        <button id="submit-id">Create GRID</button>
 
         <div>
-          <input class="color-well" type="color" id="color-well-id" onchange="colorWellValue()">
+          <input class="color-well" type="color" id="color-well-id"
+          onchange="colorWellValue()">
+          <div>
             <p class="hex-value-title">
-              Hex Value:
+              Hex Value
             </p>
-            <p class="color-well-hex-value" id="color-well-hex-value-id"></p>
+            <p class="hex-value" id="color-value-id"></p>
+          </div>
         </div>
       </section>
+
       <section class="the-grid">
         <h2>The GRID</h2>
+        <div id="grid-id">
+          <table></table>
+        </div>
 
       </section>
 

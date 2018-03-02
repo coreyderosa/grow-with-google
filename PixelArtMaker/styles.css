@@ -18,19 +18,27 @@ body {
 /*  */
 }
 
-.height-text-input{
+.rows-input{
   border: solid;
+  height: 50px;
+  max-width: 150px;
+  font-size: 30px;
+  text-align: center;
 }
 
-.width-text-input{
+.cols-input{
   border: solid;
+  height: 50px;
+  max-width: 150px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .hex-value-title{
   border: solid;
 }
 
-.color-well-hex-value{
+.color-value{
   border: solid;
 }
 
@@ -39,6 +47,24 @@ body {
   height: 60px;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),
   0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.the-grid{
+
+}
+
+#grid-id{
+  border: 2px solid red;
+}
+
+.row-lines{
+  /* border: 5px solid green; */
+}
+
+.col-lines{
+  border: 5px solid green;
+  width: 10px;
+  height: 10px;
 }
 
 
