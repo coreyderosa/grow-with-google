@@ -12,7 +12,7 @@ function maxLength(maxlength) {
 
 $("#clear-id").prop("disabled", true);
 
-$("#create-id").click(function () {
+$("#create-id").click(function makeGrid() {
   var rows = $("#rows-id").val();
   var cols = $("#cols-id").val();
   var grid = "";

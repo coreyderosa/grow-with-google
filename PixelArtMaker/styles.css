@@ -57,14 +57,14 @@ body {
   /* border: 2px solid red; */
 }
 
-.row-lines{
-  /* border: 5px solid green; */
+table{
+  border-spacing: 0px;
 }
 
 .col-lines{
-  border: 5px solid green;
-  width: 10px;
-  height: 10px;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
 }
 
 
