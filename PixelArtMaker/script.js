@@ -13,16 +13,16 @@ function maxLength(maxlength) {
 $("#submit-id").click(function () {
   var rows = $("#rows-id").val();
   var cols = $("#cols-id").val();
-
+  var grid = "";
   // console.log("rows: " + rows);
   // console.log("columns: " + cols);
   for (var h = 0; h < rows; h++) {
     console.log(h);
     $("#grid-id table").append("<tr></tr>");
-    for (var w = 0; w < cols; w++) {
-      console.log(w);
-      $("#grid-id table tr").append("<td class='col-lines'></td>");
-    }
+  }
+  for (var w = 0; w < cols; w++) {
+    console.log(w);
+    $("#grid-id table tr").append("<td class='col-lines'></td>");
   }
   return;
 });
