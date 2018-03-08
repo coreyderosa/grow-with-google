@@ -11,53 +11,58 @@
 /* Content */
 body {
   font-family: "Orbitron";
-  background-color: rgb(44,44,44);
-
+  background-color: rgb(219,219,219);
   letter-spacing: 5px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 h1{
   font-weight: 700;
-  color: rgb(150,150,150);
+  color: rgb(75,75,75);
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
 }
 
 h2{
   font-weight: 500;
-  color: rgb(219,219,219);
+  color: rgb(75,75,75);
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
 }
-
-
 
 .height{
 /*  */
 }
 
 .rows-input{
-  border: solid;
   height: 30px;
-  max-width: 150px;
+  max-width: 75px;
   font-size: 30px;
   text-align: center;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
 }
 
 .cols-input{
-  border: solid;
+
   height: 30px;
-  max-width: 150px;
+  max-width: 75px;
   font-size: 30px;
   text-align: center;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
 }
 
 .hex-value-title{
-  border: solid;
+  font-weight: 400;
 }
 
-.color-value{
-  border: solid;
+.hex-value{
+  border-radius: 3px;
 }
 
 .color-well{
-  width: 200px;
+  /* border-radius: 50%; */
+  border-radius: 3px;
+  width: 120px;
   height: 60px;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),
   0 6px 20px 0 rgba(0,0,0,0.19);
@@ -71,6 +76,10 @@ h2{
   /* border: 2px solid green; */
 }
 
+.container{
+
+}
+
 .table{
   border-spacing: 0px;
 }
@@ -80,9 +89,9 @@ td{
 }
 
 #grid-lines{
-  border: 1px solid rgb(170,170,170);
-  width: 10px;
-  height: 10px;
+  border: 0.1px solid rgb(170,170,170);
+  width: 20px;
+  height: 20px;
 }
 
 

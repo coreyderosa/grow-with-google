@@ -31,7 +31,7 @@ $("#create-id").click(function makeGrid() {
   // make the columns which completes the cell
   for (var w = 0; w < cols; w++) {
     $("#grid-id table tr")
-      .append("<td id='grid-lines' onmousemove='colorTheCell(this)'></td>");
+      .append("<td id='grid-lines' onmouseover='colorTheCell(this)'></td>");
   }
 
   // Disable the create button
