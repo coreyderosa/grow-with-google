@@ -11,16 +11,30 @@
 /* Content */
 body {
   font-family: "Orbitron";
+  background-color: rgb(44,44,44);
 
-
+  letter-spacing: 5px;
 }
+
+h1{
+  font-weight: 700;
+  color: rgb(150,150,150);
+}
+
+h2{
+  font-weight: 500;
+  color: rgb(219,219,219);
+}
+
+
+
 .height{
 /*  */
 }
 
 .rows-input{
   border: solid;
-  height: 50px;
+  height: 30px;
   max-width: 150px;
   font-size: 30px;
   text-align: center;
@@ -28,7 +42,7 @@ body {
 
 .cols-input{
   border: solid;
-  height: 50px;
+  height: 30px;
   max-width: 150px;
   font-size: 30px;
   text-align: center;
@@ -50,19 +64,23 @@ body {
 }
 
 .the-grid{
-
+  font-weight: 400;
 }
 
 #grid-id{
   /* border: 2px solid green; */
 }
 
-table{
+.table{
   border-spacing: 0px;
 }
 
-.col-lines{
-  border: 1px solid black;
+td{
+  background-color: red;
+}
+
+#grid-lines{
+  border: 1px solid rgb(170,170,170);
   width: 20px;
   height: 20px;
 }
