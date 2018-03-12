@@ -14,11 +14,12 @@
     </head>
     <body>
       <h1>Pixel Art Maker</h1>
-      <section class="the-input">
+
         <h2>Enter GRID specifications</h2>
+    <section class="the-input-section">
 
         <div class="grid-rows">
-          <label>Rows<label>
+          <label>Grid Height<label>
             <br />
           <input class="rows-input" type="number" name="rows"
           id="rows-id" onchange="rowEnableCreate()">
@@ -26,7 +27,7 @@
         </div>
 
         <div class="grid-cols">
-          <label>Columns<label>
+          <label>Grid Width<label>
             <br />
           <input class="cols-input" type="number" name="cols"
           id="cols-id" onchange="colEnableCreate()">
@@ -34,7 +35,13 @@
         </div>
 
         <div>
-          <label>Pick a color</label>
+          <button class="create-button" id="create-id">Create GRID</button>
+          <br />
+          <button class="clear-button" id="clear-id">Clear GRID</button>
+        </div>
+
+        <div>
+          <label>Pick a paint color</label>
         </br>
           <input class="color-well" type="color" id="color-well-id"
           onchange="getColorDisplayHex()">
@@ -45,14 +52,9 @@
           </div>
         </div>
 
-        <div>
-          <button id="create-id">Create GRID</button>
-          <button id="clear-id">Clear GRID</button>
-        </div>
-
       </section>
 
-      <section class="the-grid">
+      <section class="the-grid-section">
         <h2>The GRID</h2>
         <div id="grid-id" class="container">
           <table id="table-id" class="table"></table>

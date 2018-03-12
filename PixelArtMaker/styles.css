@@ -13,87 +13,98 @@ body {
   font-family: "Orbitron";
   background-color: rgb(219,219,219);
   letter-spacing: 5px;
-  /* display: block; */
-  /* justify-content: center; */
-  /* text-align: center; */
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 h1{
   font-weight: 700;
   color: rgb(75,75,75);
+  max-width: fit-content;
 }
 
 h2{
   font-weight: 500;
   color: rgb(75,75,75);
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
+  /* box-shadow: 0 4px 6px 0 rgba(0,0,0,2); */
+  max-width: fit-content;
 }
 
-.height{
-/*  */
+.the-input-section{
+  margin-left: 30px;
 }
 
 label{
-  margin-left: 20px;
+  color: rgb(75,75,75);
 }
 
 .rows-input{
-  height: 30px;
-  max-width: 75px;
+  font-family: "Orbitron";
+  height: 40px;
+  max-width: 95px;
   font-size: 30px;
   text-align: center;
   box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
   border: none;
   border-radius: 2px;
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .cols-input{
-  height: 30px;
-  max-width: 75px;
+  font-family: "Orbitron";
+  height: 40px;
+  max-width: 95px;
   font-size: 30px;
   text-align: center;
   box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
   border: none;
   border-radius: 2px;
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
-button{
+.create-button{
   font-family: "Orbitron";
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
   border-radius: 4px;
   background-color: #008CBA;
   border: none;
-  color: white;
+  color: rgb(219,219,219);
   padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
 }
 
-
+.clear-button{
+  font-family: "Orbitron";
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  color: #008CBA;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 1px 1px grey;
+}
 
 .hex-value-title{
   font-weight: 400;
   margin-bottom: 20px;
-  margin-left: 20px;
-
 }
 
 .hex-value{
   border-radius: 3px;
   color: gray;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin-bottom: 20px;
-  margin-left: 20px;}
+}
 
 .color-well{
   /* border-radius: 50%; */
@@ -102,20 +113,7 @@ button{
   height: 60px;
   box-shadow: 0 4px 6px 0 rgba(0,0,0,2);
   margin-bottom: 20px;
-  margin-left: 20px;
   cursor: pointer;
-}
-
-.the-grid{
-  font-weight: 400;
-}
-
-#grid-id{
-  /* border: 2px solid green; */
-}
-
-.container{
-
 }
 
 .table{
@@ -127,17 +125,7 @@ td{
 }
 
 #grid-lines{
-  border: 0.1px solid rgb(170,170,170);
+  border: 0.1px solid rgb(75,75,75);
   width: 20px;
   height: 20px;
-}
-
-
-/* Footer */
-.footer {
-    …
-}
-
-.footer-nav {
-    …
 }
