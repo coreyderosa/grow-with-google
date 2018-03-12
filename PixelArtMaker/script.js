@@ -1,27 +1,64 @@
-var colorWellHexValue = document.getElementById("color-well-id").value;
-document.getElementById("color-value-id").innerHTML = colorWellHexValue;
+$(document).ready(function () {
+  /** Disable create button by default **/
+  $("#create-id").prop("disabled", true);
 
-function colorWellValue() {
-  var colorWellHexValue = document.getElementById("color-well-id").value;
+  /** Disable clear button by default **/
+  $("#clear-id").prop("disabled", true);
+
+  getColorDisplayHex();
+
+});
+
+/*
+Enable create button if both row and
+col inputs have value, and if row is the last
+value collected
+*/
+function rowEnableCreate() {
+  let rowInput = $("#rows-id").val();
+  let colInput = $("#cols-id").val();
+  if (rowInput > 0 && colInput > 0) {
+    $("#create-id").prop("disabled", false);
+  }
+};
+
+/*
+Enable create button if both row and
+col inputs have value, and if column is the last
+value collected
+*/
+function colEnableCreate() {
+  let rowInput = $("#rows-id").val();
+  let colInput = $("#cols-id").val();
+  if (rowInput > 0 && colInput > 0) {
+    $("#create-id").prop("disabled", false);
+  }
+};
+
+/** Show color and hex value once user selects color **/
+function getColorDisplayHex() {
+  let colorWellHexValue = document.getElementById("color-well-id").value;
   document.getElementById("color-value-id").style.backgroundColor = colorWellHexValue;
-}
+  document.getElementById("color-value-id").innerHTML = colorWellHexValue;
+};
 
 
 /** Add color-well color to a clicked cell **/
 function colorTheCell(cell) {
-  var colorWellHexValue = document.getElementById("color-well-id").value;
+  let colorWellHexValue = document.getElementById("color-well-id").value;
   cell.style.backgroundColor = colorWellHexValue;
 }
-
-/** Disable clear button by default **/
-$("#clear-id").prop("disabled", true);
-
 
 /** Make the grid function **/
 $("#create-id").click(function makeGrid() {
   // get number of rows and columns from input
-  var rows = $("#rows-id").val();
-  var cols = $("#cols-id").val();
+  const rows = $("#rows-id").val();
+  const cols = $("#cols-id").val();
+
+  if (rows > 0 && cols >= 0) {
+    /** Disable create button by default **/
+    $("#create-id").prop("disabled", false);
+  }
 
   // make the rows
   for (var h = 0; h < rows; h++) {
@@ -31,7 +68,7 @@ $("#create-id").click(function makeGrid() {
   // make the columns which completes the cell
   for (var w = 0; w < cols; w++) {
     $("#grid-id table tr")
-      .append("<td id='grid-lines' onmouseover='colorTheCell(this)'></td>");
+      .append("<td id='grid-lines' onclick='colorTheCell(this)'></td>");
   }
 
   // Disable the create button

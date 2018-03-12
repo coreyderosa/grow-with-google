@@ -18,30 +18,38 @@
         <h2>Enter GRID specifications</h2>
 
         <div class="grid-rows">
+          <label>Rows<label>
+            <br />
           <input class="rows-input" type="number" name="rows"
-          id="rows-id">
-          <label>rows<label>
+          id="rows-id" onchange="rowEnableCreate()">
+
         </div>
 
         <div class="grid-cols">
+          <label>Columns<label>
+            <br />
           <input class="cols-input" type="number" name="cols"
-          id="cols-id">
-        <label>columns<label>
-        </div>
+          id="cols-id" onchange="colEnableCreate()">
 
-        <button id="create-id">Create GRID</button>
-        <button id="clear-id">Clear GRID</button>
+        </div>
 
         <div>
+          <label>Pick a color</label>
+        </br>
           <input class="color-well" type="color" id="color-well-id"
-          onchange="colorWellValue()">
+          onchange="getColorDisplayHex()">
           <div>
-            <p class="hex-value-title">
-              Hex Value
-            </p>
-            <p class="hex-value" id="color-value-id"></p>
+            <label>Hex Value<label>
+              <br />
+            <span class="hex-value" id="color-value-id"></span>
           </div>
         </div>
+
+        <div>
+          <button id="create-id">Create GRID</button>
+          <button id="clear-id">Clear GRID</button>
+        </div>
+
       </section>
 
       <section class="the-grid">
