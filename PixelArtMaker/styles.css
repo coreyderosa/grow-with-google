@@ -95,6 +95,21 @@ label{
   text-shadow: 1px 1px grey;
 }
 
+.clear-drawing-button{
+  font-family: "Orbitron";
+  font-weight: 400;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  color: #008CBA;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 1px 1px grey;
+}
+
 .hex-value-title{
   font-weight: 400;
   margin-bottom: 20px;
