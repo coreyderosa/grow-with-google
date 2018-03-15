@@ -1,40 +1,8 @@
 $(document).ready(function () {
-  // /** Disable create button by default **/
-  // $("#create-id").prop("disabled", true);
-  //
-  // /** Disable clear button by default **/
-  // $("#clear-id").prop("disabled", true);
-document.getElementById("rows-id").value = 20;
-document.getElementById("cols-id").value = 20;
+  document.getElementById("rows-id").value = 20;
+  document.getElementById("cols-id").value = 20;
   getColorDisplayHex();
-
 });
-
-/*
-Enable create button if both row and
-col inputs have value, and if row is the last
-value collected
-*/
-// function rowEnableCreate() {
-//   let rowInput = $("#rows-id").val();
-//   let colInput = $("#cols-id").val();
-//   if (rowInput > 0 && colInput > 0) {
-//     $("#create-id").prop("disabled", false);
-//   }
-// };
-//
-// /*
-// Enable create button if both row and
-// col inputs have value, and if column is the last
-// value collected
-// */
-// function colEnableCreate() {
-//   let rowInput = $("#rows-id").val();
-//   let colInput = $("#cols-id").val();
-//   if (rowInput > 0 && colInput > 0) {
-//     $("#create-id").prop("disabled", false);
-//   }
-// };
 
 /** Show color and hex value once user selects color **/
 function getColorDisplayHex() {
@@ -62,7 +30,7 @@ $("#create-id").click(function makeGrid() {
   const cols = $("#cols-id").val();
 
   if (rows > 0 && cols >= 0) {
-    /** Disable create button by default **/
+    // Disable create button by default
     $("#create-id").prop("disabled", false);
   }
 
