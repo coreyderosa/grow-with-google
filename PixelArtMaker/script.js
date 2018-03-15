@@ -18,6 +18,7 @@ function colorTheCell(cell) {
   cell.style.backgroundColor = colorWellHexValue;
 }
 
+/** Clear the canvas**/
 $("#clear-drawing-id").click(function clearTheDrawing() {
   $("td").css("background-color", "rgb(219,219,219)");
 });
@@ -29,11 +30,6 @@ $("#create-id").click(function makeGrid() {
   const rows = $("#rows-id").val();
   const cols = $("#cols-id").val();
 
-  if (rows > 0 && cols >= 0) {
-    // Disable create button by default
-    $("#create-id").prop("disabled", false);
-  }
-
   // make the rows
   for (var h = 0; h < rows; h++) {
     $("#grid-id table").append("<tr></tr>");
@@ -44,12 +40,6 @@ $("#create-id").click(function makeGrid() {
     $("#grid-id table tr")
       .append("<td id='grid-lines' onclick='colorTheCell(this)'></td>");
   }
-
-  // Disable the create button
-  $("#create-id").prop("disabled", true);
-
-  // Enable the clear button
-  $("#clear-id").prop("disabled", false);
 });
 
 
@@ -65,10 +55,4 @@ $("#clear-id").click(function clearGrid() {
 
   // remove the table
   $("#table-id").children().remove();
-
-  // Disable the clear button
-  $("#clear-id").prop("disabled", true);
-
-  // Enable the create button
-  $("#create-id").prop("disabled", false);
 });

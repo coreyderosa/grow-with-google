@@ -103,11 +103,12 @@ h2{
   border: none;
   color: #008CBA;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
   text-shadow: 1px 1px grey;
+  
 }
 
 .clear-drawing-button{
@@ -118,7 +119,7 @@ h2{
   border: none;
   color: #008CBA;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
