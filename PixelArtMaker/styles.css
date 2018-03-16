@@ -19,7 +19,6 @@ h1{
 
 h2{
   font-weight: 500;
-  /* color: rgb(75,75,75); */
   margin-left: 30px;
   font-weight: 700;
   color: black;
@@ -49,10 +48,6 @@ h2{
   float: left;
 }
 
-/* label{
-  color: rgb(75,75,75);
-} */
-
 .rows-input{
   font-family: "Orbitron";
   height: 40px;
@@ -63,7 +58,6 @@ h2{
   border-top: 3px solid #ff8040;
   border-radius: 2px;
   margin-bottom: 20px;
-
 }
 
 .cols-input{
@@ -81,7 +75,6 @@ h2{
 .create-button{
   font-family: "Orbitron";
   margin-top: 20px;
-  /* margin-bottom: 20px; */
   border-radius: 4px;
   background-color: #008CBA;
   border: none;
@@ -134,7 +127,6 @@ h2{
 
 .hex-value{
   border-radius: 3px;
-  /* color: gray; */
   margin-bottom: 20px;
 }
 
@@ -157,7 +149,6 @@ td{
 }
 
 #grid-lines{
-  /* border: 0.1px solid rgb(75,75,75); */
   border: 0.1px solid black;
   width: 20px;
   height: 20px;

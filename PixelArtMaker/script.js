@@ -4,6 +4,7 @@ $(document).ready(function () {
   getColorDisplayHex();
 });
 
+
 /** Show color and hex value once user selects color **/
 function getColorDisplayHex() {
   let colorWellHexValue = document.getElementById("color-well-id").value;
@@ -18,14 +19,12 @@ function colorTheCell(cell) {
   cell.style.backgroundColor = colorWellHexValue;
 }
 
-/** Clear the canvas**/
-$("#clear-drawing-id").click(function clearTheDrawing() {
-  $("td").css("background-color", "rgb(219,219,219)");
-});
-
 
 /** Make the grid **/
 $("#create-id").click(function makeGrid() {
+  // clear the grid prior to creating it
+  $("#table-id").empty();
+
   // get number of rows and columns from input
   const rows = $("#rows-id").val();
   const cols = $("#cols-id").val();
@@ -40,6 +39,12 @@ $("#create-id").click(function makeGrid() {
     $("#grid-id table tr")
       .append("<td id='grid-lines' onclick='colorTheCell(this)'></td>");
   }
+});
+
+
+/** Clear the canvas**/
+$("#clear-drawing-id").click(function clearTheDrawing() {
+  $("td").css("background-color", "rgb(219,219,219)");
 });
 
 
